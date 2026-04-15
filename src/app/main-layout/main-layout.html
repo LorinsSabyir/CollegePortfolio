@@ -1,9 +1,29 @@
 <!-- component -->
 <body class="font-poppins antialiased">
-  <div id="view" class="h-full w-screen flex flex-row" x-data="{ sidenav: true }">
+  <div id="view" class="h-full w-screen flex flex-row">
     <app-navbar></app-navbar>
     <div class="p-4 w-full h-full">
-      <router-outlet></router-outlet>
+
+      <section id="home">
+        <app-home></app-home>
+      </section>
+      
+      <section id="about">
+        <app-about></app-about>
+      </section>
+      
+      <section id="skills">
+        <app-skills></app-skills>
+      </section>
+
+      <section id="projects">
+        <app-projects></app-projects>
+      </section>
+
+      <section id="contacts">
+        <app-contacts></app-contacts>
+      </section>
+
     </div>
   </div>
 </body>
