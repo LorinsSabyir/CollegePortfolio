@@ -1,0 +1,39 @@
+/* home.component.css */
+.home-hero {
+  background: linear-gradient(180deg, #0b0d10 0%, #111217 100%);
+  color: #e6eef8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.intro {
+  color: #7f8fa6;
+  letter-spacing: 0.06em;
+}
+
+.name {
+  background: linear-gradient(90deg, #7ee7c6 0%, #00d3f3 40%, #7c5cff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  color: #9fb0c8;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+
+.cta-primary:hover { transform: scale(1.05); }
+
+
+.cta-secondary:hover { background-color: rgba(255,255,255,0.08); }
+
+.profile-img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(167, 62, 62, 0.6);
+  transition: transform 0.3s ease;
+}
+.profile-img:hover { transform: translateY(-6px) scale(1.02); }

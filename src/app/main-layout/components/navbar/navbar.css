@@ -1,4 +1,45 @@
-html {
-  scroll-behavior: smooth;
+.navbar {
+  backdrop-filter: blur(8px); /* subtle glass effect */
+  border-bottom: 0.8px solid #1D293D;
+  background: rgba(2, 6, 24, 0.80);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.20), 0 4px 6px -4px rgba(0, 0, 0, 0.20);
 }
 
+.navbar .nav-logo {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+}
+
+.navbar .nav-link {
+  color: #90A1B9;
+  font-size: 14px;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #00D3F3;
+  background-color: rgba(0, 211, 243, 0.1);
+}
+
+.navbar .nav-button {
+  border-radius: 4px;
+  border: 0.8px solid rgba(0, 184, 219, 0.5);
+  color: #00D3F3;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-button:hover {
+  background-color: rgba(0, 184, 219, 0.1);
+  transform: scale(1.05);
+}
