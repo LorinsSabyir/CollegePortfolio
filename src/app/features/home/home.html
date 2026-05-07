@@ -1,31 +1,67 @@
-<!-- home.component.html -->
-<section class="home-hero min-h-screen flex items-center justify-center px-30 pt-15">
-  <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<section class="home-hero min-h-screen flex items-center justify-center px-6 pt-16 py-10 md:px-10 lg:px-16" >
+  <div class="container mx-auto max-w-5xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
     
     <!-- Left: Intro Text -->
-    <div class="title text-left">
-      <h3 class="intro consola-mono text-sm md:text-base">Hi I'm</h3>
-      <h1 class="name mt-3 text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-        Lei Lorenz Xavier A. Gomelan
+    <div class="title text-left" data-aos="zoom-in" data-aos-delay="200">
+      <p class="consola-mono text-xs tracking-wide text-[#00D3F3]">system.status === 'READY_FOR_WORK'</p>
+
+      <h1 class="mt-4 text-4xl md:text-6xl lg:text-[72px] font-extrabold leading-[1.1] tracking-[-0.03em]">
+        Engineering 
+        <span class="text-white"> </span>
+        <span class="inline-block bg-[#00D3F3] text-[#020618] px-2 rounded-sm">&lt;Frontend/&gt;</span>
+        <span class="text-white"> &amp; Connected </span>
+        <span class="inline-block bg-[#00D3F3] text-[#020618] px-2 rounded-sm">Systems</span>
       </h1>
-      <h4 class="subtitle consola-mono mt-4 text-sm md:text-base max-w-lg">
-        A Bachelor Of Science In Information Technology Student at Davao del Norte State College
-      </h4>
+
+      <div class="mt-5 space-y-1 max-w-xl">
+        <p class="consola-mono text-base leading-6.5 text-[#90A1B9]">
+          $ &gt; Architecting responsive web applications with modern UI frameworks.
+        </p>
+        <p class="consola-mono text-base leading-6.5 text-[#90A1B9]">
+          $ &gt; Integrating robust backends, APIs, and real-world systems (IoT + networking).
+        </p>
+      </div>
 
       <!-- Buttons -->
       <div class="mt-8 flex gap-4">
-        <button href="#projects" class="cta-primary btn-primary">
-          Execute Projects 
-          <img src="icons/next.png" alt="Logo" class="icon w-5">
-        </button>
-        <button href="#contacts" class="cta-secondary btn-secondary">Init Contact</button>
+        <a routerLink="/resume" fragment="projects" class="consola-mono cta-primary btn-primary">
+          $ > Download CSV  
+        </a>
+        <a href="#contacts" fragment="contacts" class="consola-mono cta-secondary btn-secondary">$ > Contact</a>
       </div>
     </div>
 
     <!-- Right: Profile Image -->
-    <div class="profile flex justify-center lg:justify-end">
-      <img src="/images/39c94595-cf87-4d0f-93d7-f6241b27fd24.jpg" alt="Profile" class="profile-img grayscale-50 transition duration-700 ease-in-out hover:grayscale-0 rounded-xl shadow-2xl" />
+    <div class="title text-left" data-aos="zoom-in" data-aos-delay="200">
+      <div class="tw-profile inline-block rounded-xl overflow-visible" data-aos="zoom-in" data-aos-delay="200">
+        <div class="shadow-div"></div>
+    
+        <img
+          src="/images/Messenger_creation_1F861F12-7773-43E4-B51A-B5224CC50427.jpeg"
+          alt="Profile"
+          class="profile-img block w-full max-w-[600px] sm:max-w-[420px] rounded-xl grayscale-[0.5] hover:grayscale-0 transition duration-500 ease-in-out"
+        />
+      </div>
+      <h1 class="mt-4 text-3xl md:text-3xl lg:text-[40px] font-extrabold leading-[1.1] tracking-[-0.03em]">
+        LEI 
+        <span class="text-white"> </span>
+        <span class="inline-block bg-[#00D3F3] text-[#020618] px-2 rounded-sm">LORENZ </span>
+        <span class="text-white"> XAVIER A. </span>
+        <span class="inline-block bg-[#00D3F3] text-[#020618] px-2 rounded-sm">GOMELAN</span>
+      </h1>
     </div>
+    <!-- <div class="profile-wrapper flex justify-center lg:justify-end">
+      <div class="tw-profile inline-block rounded-xl overflow-visible" data-aos="zoom-in" data-aos-delay="200">
+        <div class="shadow-div"></div>
+    
+        <img
+          src="/images/Messenger_creation_1F861F12-7773-43E4-B51A-B5224CC50427.jpeg"
+          alt="Profile"
+          class="profile-img block w-full max-w-[600px] sm:max-w-[420px] rounded-xl grayscale-[0.5] hover:grayscale-0 transition duration-500 ease-in-out"
+        />
+      </div>
+    </div> -->
+    
     
   </div>
 </section>

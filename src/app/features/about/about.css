@@ -1,1 +1,80 @@
+.about-section {
+  border-top: 0.8px solid #1D293D;
+  border-bottom: 0.8px solid #1D293D;
+  background: rgba(15, 23, 43, 0.50);
+}
+
+/* Background grid overlay */
+.about-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(0,211,243,0.08) 1px, transparent 1px),
+    linear-gradient(rgba(142,81,255,0.08) 1px, transparent 1px);
+  background-size: 40px 40px; /* grid spacing */
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Accent square on the left */
+.grid-box {
+  border: 1px solid rgba(0,211,243,0.25);
+  border-radius: 0.5rem;
+  background-image:
+    linear-gradient(90deg, rgba(0,211,243,0.15) 1px, transparent 1px),
+    linear-gradient(rgba(142,81,255,0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Text styles */
+.section-title {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  letter-spacing: 0.05em;
+}
+
+.headline {
+  color: #e6eef8;
+}
+
+.description {
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #8E51FF; /* purple accent */
+  font-weight: 600;
+}
+
+/* Feature cards */
+.feature-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,211,243,0.15);
+}
+
+.feature-title {
+  color: #00D3F3;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feature-desc {
+  color: #9fb0c8;
+  font-size: 0.95rem;
+}
+
+/* wrapper and image stacking */
+.tw-profile {
+  position: relative;
+  transition: transform 300ms cubic-bezier(.2,.9,.3,1);
+  will-change: transform;
+}
 

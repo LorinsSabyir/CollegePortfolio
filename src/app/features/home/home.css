@@ -1,6 +1,6 @@
 /* home.component.css */
 .home-hero {
-  background: linear-gradient(180deg, #0b0d10 0%, #111217 100%);
+  /* background: linear-gradient(180deg, #0b0d10 0%, #111217 10%); */
   color: #e6eef8;
   -webkit-font-smoothing: antialiased;
 }
@@ -29,11 +29,58 @@
 
 .cta-secondary:hover { background-color: rgba(255,255,255,0.08); }
 
-.profile-img {
-  width: 500px;
-  height: auto;
-  object-fit: cover;
-  box-shadow: 0 12px 30px rgba(167, 62, 62, 0.6);
-  transition: transform 0.3s ease;
+/* wrapper and image stacking */
+.tw-profile {
+  position: relative;
+  transition: transform 300ms cubic-bezier(.2,.9,.3,1);
+  will-change: transform;
 }
-.profile-img:hover { transform: translateY(-6px) scale(1.02); }
+
+/* the actual shadow div that matches the image size */
+.tw-profile .shadow-div {
+  position: absolute;
+  inset: 0;                 /* match the image box exactly */
+  z-index: 0;               /* behind the image */
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(135deg,
+    rgba(0,184,219,0.40) 0%,
+    rgba(142,81,255,0.40) 100%);
+  filter: blur(28px);
+  transform: translateY(18px) scale(1.02); /* offset so image overlaps */
+  opacity: 0.9;
+  transition: transform 300ms ease, filter 300ms ease, opacity 300ms ease;
+  mix-blend-mode: screen;
+  /* allow the glow to extend beyond the image bounds */
+  margin: -6%;
+}
+
+/* ensure the image sits above the shadow */
+.profile-img { position: relative; z-index: 10; }
+
+/* hover intensify the glow */
+.tw-profile:hover .shadow-div {
+  transform: translateY(10px) scale(1.04);
+  filter: blur(22px) saturate(1.05);
+  opacity: 1;
+}
+
+/* responsive adjustments */
+@media (max-width: 1024px) {
+  .tw-profile .shadow-div {
+    transform: translateY(14px) scale(1.01);
+    filter: blur(24px);
+    margin: -5%;
+  }
+}
+@media (max-width: 640px) {
+  .tw-profile .shadow-div {
+    transform: translateY(10px) scale(1.00);
+    filter: blur(18px);
+    opacity: 0.95;
+    margin: -4%;
+  }
+  .profile-img { max-width: 320px; }
+}
+
+

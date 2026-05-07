@@ -1,1 +1,29 @@
-<p>contacts works!</p>
+<section id="contacts" class="contact-section py-24 px-6 md:px-10 lg:px-16">
+  <div class="container mx-auto max-w-5xl">
+    <div class="contact-card" data-aos="zoom-in">
+      <p class="consola-mono text-[#00D3F3] text-sm">await getInTouch();</p>
+      <h2 class="mt-3 text-3xl md:text-5xl font-extrabold tracking-[-0.02em] text-white">
+        Initialize Connection
+      </h2>
+      <p class="mt-5 text-[#90A1B9] leading-7 max-w-2xl">
+        Currently open for new opportunities. Whether you have a question, a project proposal, or just want to say
+        hi—my inbox is open.
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center gap-3">
+        <a class="btn-primary consola-mono" [href]="'mailto:' + email">
+          $ &gt; Say_Hello.sh
+          <img src="icons/send.png" alt="" class="w-5" />
+        </a>
+        <a class="btn-secondary consola-mono" [href]="githubUrl" target="_blank" rel="noreferrer">
+          GitHub
+          <img src="icons/github.png" alt="" class="w-5" />
+        </a>
+        <a class="btn-secondary consola-mono" [href]="linkedinUrl" target="_blank" rel="noreferrer">
+          LinkedIn
+          <img src="icons/linkedin.png" alt="" class="w-5" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

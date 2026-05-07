@@ -1,1 +1,26 @@
-<p>projects works!</p>
+<section id="projects" class="projects-section py-20 px-6 md:px-10 lg:px-16">
+  <div class="container mx-auto max-w-5xl">
+    <div class="mb-10">
+      <div class="flex items-end gap-3">
+        <span class="consola-mono text-[#00D3F3] text-2xl">03.</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Created Projects</h2>
+      </div>
+      <div class="mt-4 h-px bg-[#1D293D] opacity-80"></div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6">
+      <article class="project-card" *ngFor="let p of projects" data-aos="fade-up">
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-white text-xl font-semibold">{{ p.title }}</h3>
+          <img src="icons/new-tab.png" alt="" class="w-5 h-5 opacity-80" />
+        </div>
+
+        <p class="mt-3 text-[#90A1B9] leading-7">{{ p.description }}</p>
+
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="tag" *ngFor="let t of p.tags">{{ t }}</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

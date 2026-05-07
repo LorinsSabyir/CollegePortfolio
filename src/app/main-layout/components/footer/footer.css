@@ -1,0 +1,4 @@
+.footer {
+  border-top: 0.8px solid var(--border);
+  background: rgba(15, 23, 43, 0.35);
+}
