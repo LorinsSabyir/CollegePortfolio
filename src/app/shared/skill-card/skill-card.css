@@ -1,0 +1,22 @@
+.stack-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stack-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0, 211, 243, 0.12);
+}
+
+.pill {
+  border: 1px solid rgba(0, 184, 219, 0.35);
+  background: rgba(0, 184, 219, 0.08);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+  line-height: 18px;
+}

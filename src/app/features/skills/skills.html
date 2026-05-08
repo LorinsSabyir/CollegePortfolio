@@ -9,16 +9,9 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="stack-card" *ngFor="let col of columns" data-aos="zoom-in">
-        <div class="flex items-center justify-between">
-          <h3 class="text-white font-semibold text-lg">{{ col.title }}</h3>
-          <img [src]="col.icon" alt="" class="w-6 h-6 opacity-90" />
-        </div>
-
-        <div class="mt-4 flex flex-wrap gap-2">
-          <span class="pill" *ngFor="let item of col.items">{{ item }}</span>
-        </div>
-      </div>
+      @for (col of columns; track $index) {
+        <app-skill-card [data]="col"></app-skill-card>
+      }
     </div>
   </div>
 </section>

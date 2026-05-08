@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { SkillCard } from "../../shared/skill-card/skill-card";
 
 @Component({
   selector: 'app-skills',
-  imports: [NgFor],
+  imports: [SkillCard],
   templateUrl: './skills.html',
   styleUrl: './skills.css',
 })
@@ -12,17 +12,17 @@ export class Skills {
     {
       title: 'Frontend Matrix',
       icon: 'icons/layout.png',
-      items: ['Angular', 'React', 'UI/UX Design', 'HTML/CSS/JS', 'Tailwind CSS'],
+      items: ['Angular', 'Flutter', 'Figma', 'UI/UX Design', 'HTML/CSS/JS', 'Tailwind CSS', 'Bootstrap'],
     },
     {
       title: 'Backend Core',
       icon: 'icons/server.png',
-      items: ['Python', 'Java', 'PHP', 'WordPress', 'REST APIs'],
+      items: ['Python', 'Java', 'Laravel', 'PHP', 'WordPress', 'MySQL', 'Firebase'],
     },
     {
       title: 'Systems Interface',
       icon: 'icons/processor.png',
-      items: ['IoT Architecture', 'Networking', 'Sensors', 'Hardware Proto'],
+      items: ['IoT Architecture', 'Networking', 'Sensors', 'Arduino'],
     },
   ];
 
