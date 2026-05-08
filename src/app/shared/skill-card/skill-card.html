@@ -6,7 +6,7 @@
 
   <div class="mt-4 flex flex-wrap gap-2">
     @for (skill of data?.items; track $index) {
-      <span class="pill">{{ skill }}</span>
+      <app-chips [text]="skill" color="primary"></app-chips>
     }
   </div>
 </div>

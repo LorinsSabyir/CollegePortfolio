@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
+import { Chips } from "../chips/chips";
 
 @Component({
   selector: 'app-project-card',
-  imports: [],
+  imports: [Chips],
   templateUrl: './project-card.html',
   styleUrl: './project-card.css',
 })
