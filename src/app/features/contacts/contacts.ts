@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './contacts.css',
 })
 export class Contacts {
-  protected readonly email = 'your.email@example.com';
-  protected readonly githubUrl = 'https://github.com/';
-  protected readonly linkedinUrl = 'https://www.linkedin.com/';
+  protected readonly email = 'lorins.sabyir@gmail.com';
+  protected readonly githubUrl = 'https://github.com/LorinsSabyir';
+  protected readonly linkedinUrl = 'https://www.linkedin.com/in/lei-lorenz-xavier-gomelan-3ba150356/';
 
 }

@@ -8,7 +8,7 @@
       <div class="mt-4 h-px bg-[#1D293D] opacity-80"></div>
     </div>
 
-    <div class="grid grid-cols-1 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
       @for (project of projects; track $index) {
         <app-project-card [data]="project"></app-project-card>
       }

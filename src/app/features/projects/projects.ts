@@ -12,16 +12,16 @@ export class Projects {
     {
       title: 'RoadWatch Digital Ticketing System',
       // TODO: change image link to a real image of the project
-      image: "images/39c94595-cf87-4d0f-93d7-f6241b27fd24.jpg",
+      image: "images/github.png",
       description:
-        'A dark-themed real-time dashboard built with Angular that communicates with backend services to display live device states and metrics.',
+        'A Capstone Project for the Bachelor of Science in Information Technology program, developed using Flutter for the frontend, Firebase for the backend, and FlutterFlow as the visual editor.',
       // TODO: change link to the actual project repository
-      link: "https://github.com/LorinsSabyir",
+      link: "https://github.com/LorinsSabyir/RoadWatch_Mobile_Ticketing",
       tags: ['Flutter', 'Dart', 'Firebase'],
     },
     {
       title: 'PGDDN Capitol DTR System',
-      image: "images/39c94595-cf87-4d0f-93d7-f6241b27fd24.jpg",
+      image: "images/github.png",
       description:
         'A headless WordPress implementation featuring a highly optimized frontend interface and a modular backend content model.',
       link: "https://github.com/LorinsSabyir",
@@ -29,7 +29,7 @@ export class Projects {
     },
     {
       title: 'Traffic Forecasting and Analysis',
-      image: "images/39c94595-cf87-4d0f-93d7-f6241b27fd24.jpg",
+      image: "images/github.png",
       description:
         'A Java-powered tool with a connected web interface that intercepts, visualizes, and breaks down network traffic for analysis.',
       link: "https://github.com/LorinsSabyir",
@@ -37,10 +37,10 @@ export class Projects {
     },
     {
       title: 'DeJeanVer Online Bikeshop POS System',
-      image: "images/39c94595-cf87-4d0f-93d7-f6241b27fd24.jpg",
+      image: "images/github.png",
       description:
         'A Java-powered tool with a connected web interface that intercepts, visualizes, and breaks down network traffic for analysis.',
-      link: "https://github.com/LorinsSabyir",
+      link: "https://github.com/LorinsSabyir/DeJeanVer-online-bike-shop-System",
       tags: ['HTML/CSS', 'PHP', 'Bootstrap'],
     },
   ];
