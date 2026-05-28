@@ -21,17 +21,17 @@ export class Certificate {
     },
     {
       title: 'Advanced Seminar Day 1',
-      image: "images/GOMELAN, LEI LORENZ XAVIER A (1).png",
+      image: "images/Advanced_Seminar_Day1.png",
       tags: ['Figma', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'],
     },
     {
       title: 'Advanced Seminar Day 2',
-      image: "images/GOMELAN, LEI LORENZ XAVIER A.png",
+      image: "images/Advanced_Seminar_Day2.png",
       tags: ['Figma', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'],
     },
     {
       title: 'Trilogi: User Experience Questionnaire Instruments',
-      image: "images/Lei Lorenz Xavier A Gomelan.png",
+      image: "images/Trilogy.png",
       tags: ['System Documentation', 'User Manual', 'User Experience', 'User Interface'],
     },
   ];
