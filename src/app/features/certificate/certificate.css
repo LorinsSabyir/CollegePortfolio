@@ -1,0 +1,27 @@
+.projects-section {
+  background: transparent;
+}
+
+.project-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 43, 0.4);
+  border-radius: 18px;
+  padding: 22px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 211, 243, 0.28);
+  box-shadow: 0 16px 30px rgba(0, 211, 243, 0.10);
+}
+
+.tag {
+  border: 1px solid rgba(29, 41, 61, 0.9);
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+  line-height: 18px;
+}

@@ -8,10 +8,11 @@ import { Projects } from "../features/projects/projects";
 import { isPlatformBrowser } from '@angular/common';
 import AOS from 'aos';
 import { Footer } from './components/footer/footer';
+import { Certificate } from "../features/certificate/certificate";
 
 @Component({
   selector: 'app-main-layout',
-  imports: [Navbar, Home, Contacts, About, Skills, Projects, Footer],
+  imports: [Navbar, Home, Contacts, About, Skills, Projects, Footer, Certificate],
   templateUrl: './main-layout.html',
   styleUrl: './main-layout.css',
 })

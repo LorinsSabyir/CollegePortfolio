@@ -9,4 +9,7 @@ import { Chips } from "../chips/chips";
 })
 export class ProjectCard {
   @Input() data: any;
+  @Input() isLinkPresent = true;
+  @Input() isBodyPresent = true;
+  @Input() isImgPresent = true;
 }
