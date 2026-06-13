@@ -39,7 +39,7 @@ export class Projects {
       title: 'DeJeanVer Online Bikeshop POS System',
       image: "images/github.png",
       description:
-        'A Java-powered tool with a connected web interface that intercepts, visualizes, and breaks down network traffic for analysis.',
+        'A POS and inventory platform utilizing a Bootstrap frontend and PHP backend to streamline bicycle retail transactions.',
       link: "https://github.com/LorinsSabyir/DeJeanVer-online-bike-shop-System",
       tags: ['HTML/CSS', 'PHP', 'Bootstrap'],
     },

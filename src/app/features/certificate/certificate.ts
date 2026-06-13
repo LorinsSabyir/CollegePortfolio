@@ -34,5 +34,10 @@ export class Certificate {
       image: "images/Trilogy.png",
       tags: ['System Documentation', 'User Manual', 'User Experience', 'User Interface'],
     },
+    {
+      title: 'BUGSAI TBI: Information Session 2025,',
+      image: "images/BUGSAI_Cert.png",
+      tags: ['Technology Business Incubator', 'Information Session', 'DNSC', 'User Interface'],
+    },
   ];
 }
