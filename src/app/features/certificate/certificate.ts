@@ -35,9 +35,24 @@ export class Certificate {
       tags: ['System Documentation', 'User Manual', 'User Experience', 'User Interface'],
     },
     {
-      title: 'BUGSAI TBI: Information Session 2025,',
+      title: 'BUGSAI TBI: Information Session 2025',
       image: "images/BUGSAI_Cert.png",
       tags: ['Technology Business Incubator', 'Information Session', 'DNSC', 'User Interface'],
+    },
+    {
+      title: 'DNSC Capstone Project Exhibit 2026: Best Poster Presentation',
+      image: "images/best_poster_presentation.png",
+      tags: ['Capstone Project', 'DNSC Awardee', 'DNSC'],
+    },
+    {
+      title: 'DNSC Capstone Project Exhibit 2026: Best Project Exhibit Design',
+      image: "images/best_project_exhibit_design.png",
+      tags: ['Capstone Project', 'DNSC Awardee', 'DNSC'],
+    },
+    {
+      title: 'DNSC Capstone Project Exhibit 2026: Best Capstone Project',
+      image: "images/best_capstone_project.png", 
+      tags: ['Capstone Project', 'DNSC Awardee', 'DNSC'],
     },
   ];
 }
